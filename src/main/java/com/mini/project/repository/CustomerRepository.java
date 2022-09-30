@@ -18,7 +18,7 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
     List<Customer> findAllCustomer(@Param("fullName") String fullName, Pageable pagination);
 
     @Query("""
-            SELECT new com.mini.project.entity.Customer(cu.id, CONCAT(cu.firstName, ' ', cu.lastName))
+            SELECT cu
             FROM Course AS co
                 JOIN co.customers AS cu
             WHERE co.id = :courseId

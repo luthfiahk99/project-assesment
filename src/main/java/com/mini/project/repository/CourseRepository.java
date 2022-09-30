@@ -21,21 +21,12 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
             """, nativeQuery = true)
     List<Course> findAll(@Param("sport") String sport, Pageable pagination);
 
-
     @Query("""
             SELECT co
             FROM Course AS co
             WHERE co.sport = :sport
             """)
     Course getBySport(@Param("sport") String sport);
-
-    @Query("""
-            SELECT new com.mini.project.dto.course.CourseGridDTO(co.id, co.sport, co.price, co.totalWeek, co.description, CONCAT(tr.firstName, ' ', tr.lastName))
-            FROM Trainer AS tr
-                LEFT JOIN tr.course AS co
-            WHERE co.sport LIKE %:sport%
-            """)
-    List<CourseGridDTO> findAllCourse(@Param("sport") String sport, Pageable pagination);
 
     @Query("""
             SELECT new com.mini.project.dto.course.UpsertCourseDTO(co.id, co.sport, co.price, co.totalWeek, co.description)

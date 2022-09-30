@@ -1,9 +1,7 @@
 package com.mini.project.service;
 
 import com.mini.project.RestSecurityConfiguration;
-import com.mini.project.dto.course.CourseGridDTO;
 import com.mini.project.dto.trainer.InsertTrainerDTO;
-import com.mini.project.dto.trainer.TrainerGridDTO;
 import com.mini.project.dto.trainer.UpdateTrainerDTO;
 import com.mini.project.entity.Account;
 import com.mini.project.entity.Course;

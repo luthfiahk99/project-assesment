@@ -1,7 +1,6 @@
 package com.mini.project.service;
 
 import com.mini.project.dto.trainer.InsertTrainerDTO;
-import com.mini.project.dto.trainer.TrainerGridDTO;
 import com.mini.project.dto.trainer.UpdateTrainerDTO;
 import com.mini.project.entity.Trainer;
 

@@ -1,6 +1,5 @@
 package com.mini.project.repository;
 
-import com.mini.project.dto.trainer.TrainerGridDTO;
 import com.mini.project.entity.Trainer;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

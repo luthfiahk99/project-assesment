@@ -1,13 +1,8 @@
 package com.mini.project.rest;
 
-import com.mini.project.dto.course.CourseGridDTO;
-import com.mini.project.dto.course.UpsertCourseDTO;
 import com.mini.project.dto.trainer.InsertTrainerDTO;
-import com.mini.project.dto.trainer.TrainerGridDTO;
 import com.mini.project.dto.trainer.UpdateTrainerDTO;
-import com.mini.project.entity.Course;
 import com.mini.project.entity.Trainer;
-import com.mini.project.repository.TrainerRepository;
 import com.mini.project.service.TrainerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -13,8 +13,6 @@ public interface CourseService {
 
     List<Course> getCourseGrid(Integer page, String sport);
 
-    List<CourseGridDTO> getCourses(Integer page, String sport);
-
     UpsertCourseDTO getUpdateCourse(String sport);
 
     void updateCourse(UpsertCourseDTO dto);

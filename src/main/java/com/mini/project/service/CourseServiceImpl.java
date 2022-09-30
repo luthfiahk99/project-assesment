@@ -51,13 +51,6 @@ public class CourseServiceImpl implements CourseService{
     }
 
     @Override
-    public List<CourseGridDTO> getCourses(Integer page, String sport) {
-        Pageable pagination = PageRequest.of(page - 1, rowsInPage, Sort.by("id"));
-        List<CourseGridDTO> grid = courseRepository.findAllCourse(sport, pagination);
-        return grid;
-    }
-
-    @Override
     public UpsertCourseDTO getUpdateCourse(String sport) {
         return courseRepository.getBySportDto(sport);
     }
